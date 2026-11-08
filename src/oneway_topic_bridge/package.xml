@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>oneway_topic_bridge</name><version>1.0.0</version>
+  <description>One-way serialized ROS 1 topic bridge between independent masters.</description>
+  <maintainer email="maintainer@example.com">Bridge maintainer</maintainer><license>BSD-3-Clause</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>rospy</exec_depend><exec_depend>roslaunch</exec_depend>
+  <test_depend>rostest</test_depend><test_depend>std_msgs</test_depend><test_depend>sensor_msgs</test_depend>
+</package>

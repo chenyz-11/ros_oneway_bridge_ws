@@ -1,0 +1,7 @@
+# 两端使用同一份话题列表；名称必须为绝对名称。
+topics:
+  - /bridge_example/chatter
+  # - /camera/image_raw
+  # - /lidar/points
+queue_size: 10
+max_message_bytes: 33554432

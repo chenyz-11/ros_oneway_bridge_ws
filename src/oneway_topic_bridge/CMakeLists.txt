@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0.2)
+project(oneway_topic_bridge)
+find_package(catkin REQUIRED)
+catkin_package()
+catkin_install_python(PROGRAMS scripts/sender.py scripts/receiver.py scripts/bridge_common.py DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+install(DIRECTORY launch config DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})

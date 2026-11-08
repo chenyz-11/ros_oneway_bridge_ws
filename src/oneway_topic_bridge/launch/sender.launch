@@ -1,0 +1,10 @@
+<launch>
+  <arg name="receiver_ip" default="127.0.0.1"/>
+  <arg name="port" default="19090"/>
+  <arg name="config" default="$(find oneway_topic_bridge)/config/topics.yaml"/>
+  <node pkg="oneway_topic_bridge" type="sender.py" name="oneway_sender" output="screen">
+    <rosparam command="load" file="$(arg config)"/>
+    <param name="receiver_ip" value="$(arg receiver_ip)"/>
+    <param name="port" value="$(arg port)"/>
+  </node>
+</launch>
